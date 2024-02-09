@@ -1,11 +1,11 @@
 score = 0;
 cross = true;
-audio = new Audio('music.mp3');
+// audio = new Audio('music.mp3');
 audiogo = new Audio('gameover.mp3');
 // audio.play()
-setTimeout(() => {
-    audio.play()
-}, 1000);
+// setTimeout(() => {
+//     audio.play()
+// }, 1000);
 document.onkeydown = function (e) {
     console.log("Key code is: ", e.keyCode)
     if (e.keyCode == 38) {
@@ -45,7 +45,7 @@ setInterval(() => {
         audiogo.play();
         setTimeout(() => {
             audiogo.pause();
-            audio.pause();
+            // audio.pause();
         }, 1000);
     }
     else if (offsetX < 145 && cross) {
