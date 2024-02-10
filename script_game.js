@@ -57,7 +57,7 @@ setInterval(() => {
         }, 1000);
         setTimeout(() => {
             aniDur = parseFloat(window.getComputedStyle(daku, null).getPropertyValue('animation-duration'));
-            newDur = aniDur - 0.2;
+            newDur = aniDur - 0.1;
             daku.style.animationDuration = newDur + 's';
             console.log('New animation duration: ', newDur)
         }, 500);
